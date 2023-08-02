@@ -1,0 +1,35 @@
+/* Navbar */
+
+.navbar,
+.navbar .nav-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  position: fixed;
+  width: 100%;
+  background-color: var(--navbar-background);
+}
+
+.nav-logo {
+  display: inline;
+}
+
+.nav-links {
+  list-style: none;
+  column-gap: 3rem;
+}
+
+.nav-link {
+  cursor: pointer;
+  padding-block: 1rem;
+}
+
+.nav-link a:hover,
+.nav-link .active {
+  color: var(--primary-color);
+}

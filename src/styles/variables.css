@@ -1,0 +1,10 @@
+:root {
+  /* Colors */
+  --primary-color: #0078ff;
+  --dark-primary-color: #0d1730;
+  --white: #fff;
+  --navbar-background: var(--white);
+
+  /* Other */
+  --navbar-height: 3.75rem;
+}
