@@ -13,9 +13,10 @@
   align-items: center;
   justify-content: space-between;
   column-gap: 5rem;
+  padding-top: 4rem;
 }
 
-.home-blob{
+.home-blob {
   width: 25rem;
   fill: var(--primary-color);
 }

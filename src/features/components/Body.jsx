@@ -7,8 +7,8 @@ const Body = () => {
   return (
     <main className="container">
       <Home />
-      {/* <About />
-      <Skills />
+      <About />
+      {/* <Skills />
       <Contact /> */}
     </main>
   );

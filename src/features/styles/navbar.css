@@ -1,7 +1,7 @@
 /* Navbar */
 
 .navbar,
-.navbar .nav-links {
+.nav-links, .css-1brm3ra {
   display: flex;
   flex-direction: row;
 }
@@ -19,14 +19,13 @@
   display: inline;
 }
 
-.nav-links {
-  list-style: none;
+.nav-links, .css-1brm3ra {
   column-gap: 3rem;
 }
 
 .nav-link {
   cursor: pointer;
-  padding-block: 1rem;
+  padding-block: 1.5rem;
 }
 
 .nav-link a:hover,
