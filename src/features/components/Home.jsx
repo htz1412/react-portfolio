@@ -1,26 +1,35 @@
-import "../styles/home.css";
-import img from "../../assets/perfil.png";
 import { Fade } from "react-awesome-reveal";
+import { Link } from "react-scroll";
+
+import { getScrollOptions } from "../services/service";
+
+import { SECTION_SCROLL_DURATION } from "../constants/constants";
+import img from "../../assets/perfil.png";
 
 const Home = () => {
+  const scrollOption = getScrollOptions();
+  const CONTACT_SECTION_ID = "contact";
+
   return (
-    <section className="home section">
-      <Fade duration={1000} direction="up">
+    <section id="home" className="section container">
+      <Fade triggerOnce direction="up">
         <div className="home-data">
-          <Fade cascade direction="up" damping={0.2} triggerOnce duration={700}>
-            <span className="home-title">Hi,</span>
+          <Fade cascade direction="up" damping={0.2} duration={SECTION_SCROLL_DURATION}>
+            <span className="home-title">Hi, </span>
             <span className="home-title">
               I'm <span className="home-title-name">Harsh Gohel</span>
             </span>
             <span className="home-title"> Software Developer</span>
             <br />
-            <p className="home-summary">
-              SoftwareDeveloper with 1 year of experience in React.js and
-              ASP.NETCore Web API. Proven ability to develop userinterfaces,
-              develop and maintain websites, and debug applications. Skilled in
-              developing software solutions with React.js and ASP.NET Core Web
-              API
-            </p>
+            <Link
+              to={CONTACT_SECTION_ID}
+              spy={true}
+              offset={scrollOption.offset}
+              smooth={true}
+              duration={scrollOption.duration}
+            >
+              <button className="primary">Contact Me</button>
+            </Link>
           </Fade>
         </div>
         <div className="home-img">

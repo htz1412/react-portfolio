@@ -1,14 +1,21 @@
 import { Link } from "react-scroll";
-import "../styles/navbar.css";
 import { Fade } from "react-awesome-reveal";
+import { getNavLinks, getScrollOptions } from "../services/service";
 
 const NavBar = () => {
-  const navLinks = ["Home", "About", "Skills", "Contact"];
+  const navLinks = getNavLinks();
+  const scrollOption = getScrollOptions();
 
   return (
     <nav className="navbar container">
       <Fade triggerOnce direction="down" duration={800}>
-        <Link to="home" spy={true} smooth={true} duration={500}>
+        <Link
+          className="nav-logo"
+          to="home"
+          spy={true}
+          smooth={true}
+          duration={scrollOption.duration}
+        >
           Harsh
         </Link>
       </Fade>
@@ -19,9 +26,9 @@ const NavBar = () => {
               <Link
                 to={navLink.toLowerCase()}
                 spy={true}
-                offset={-1}
+                offset={scrollOption.offset}
                 smooth={true}
-                duration={500}
+                duration={scrollOption.duration}
               >
                 {navLink}
               </Link>

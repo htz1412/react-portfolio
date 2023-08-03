@@ -2,9 +2,10 @@
   /* Colors */
   --primary-color: #0078ff;
   --dark-primary-color: #0d1730;
-  --white: #fff;
-  --navbar-background: var(--white);
+  --white-color: #fff;
+  --navbar-background-color: var(--white-color);
+  --primary-button-color: var(--primary-color);
 
   /* Other */
-  --navbar-height: 3.75rem;
+  --navbar-height: 4rem;
 }
