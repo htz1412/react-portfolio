@@ -1,32 +1,36 @@
 /* Navbar */
 
 .navbar,
-.navbar .nav-links {
+.nav-links,
+.css-1brm3ra {
   display: flex;
   flex-direction: row;
 }
 
 .navbar {
+  z-index: 1000;
   justify-content: space-between;
   align-items: center;
   font-weight: 600;
   position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
-  background-color: var(--navbar-background);
+  background-color: var(--navbar-background-color);
 }
 
 .nav-logo {
-  display: inline;
+  cursor: pointer;
 }
 
-.nav-links {
-  list-style: none;
+.nav-links,
+.css-1brm3ra {
   column-gap: 3rem;
 }
 
 .nav-link {
   cursor: pointer;
-  padding-block: 1rem;
+  padding-block: 1.5rem;
 }
 
 .nav-link a:hover,

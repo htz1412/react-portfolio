@@ -1,10 +1,12 @@
 :root {
   /* Colors */
+  --light-primary-color: #EBF4FF;
   --primary-color: #0078ff;
   --dark-primary-color: #0d1730;
-  --white: #fff;
-  --navbar-background: var(--white);
+  --white-color: #EBF4FF;
+  --navbar-background-color: var(--light-primary-color);
+  --primary-button-color: var(--primary-color);
 
   /* Other */
-  --navbar-height: 3.75rem;
+  --navbar-height: 4.5rem;
 }
