@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 import { getScrollOptions } from "../services/service";
 
-import { SECTION_SCROLL_DURATION } from "../constants/constants";
+import { SECTION_ANIMATION_DURATION } from "../constants/constants";
 import img from "../../assets/perfil.png";
 
 const Home = () => {
@@ -12,26 +12,36 @@ const Home = () => {
 
   return (
     <section id="home" className="section container">
-      <Fade triggerOnce direction="up">
-        <div className="home-data">
-          <Fade cascade direction="up" damping={0.2} duration={SECTION_SCROLL_DURATION}>
-            <span className="home-title">Hi, </span>
-            <span className="home-title">
-              I'm <span className="home-title-name">Harsh Gohel</span>
-            </span>
-            <span className="home-title"> Software Developer</span>
-            <br />
-            <Link
-              to={CONTACT_SECTION_ID}
-              spy={true}
-              offset={scrollOption.offset}
-              smooth={true}
-              duration={scrollOption.duration}
-            >
-              <button className="primary">Contact Me</button>
-            </Link>
-          </Fade>
-        </div>
+      <div className="home-data">
+        <Fade
+          cascade
+          direction="up"
+          damping={0.2}
+          duration={SECTION_ANIMATION_DURATION}
+        >
+          <span className="home-title">Hi, </span>
+          <span className="home-title">
+            I'm <span className="home-title-name">Harsh Gohel</span>
+          </span>
+          <span className="home-title"> Software Developer</span>
+          {/* <p>
+            I am dedicated to continuously learning and staying up-to-date with
+            the latest technologies and best practices in the software
+            development industry.
+          </p> */}
+          <br />
+          <Link
+            to={CONTACT_SECTION_ID}
+            spy={true}
+            offset={scrollOption.offset}
+            smooth={true}
+            duration={scrollOption.duration}
+          >
+            <button className="primary">Contact Me</button>
+          </Link>
+        </Fade>
+      </div>
+      <Fade duration={SECTION_ANIMATION_DURATION} direction="right">
         <div className="home-img">
           <svg
             className="home-blob"

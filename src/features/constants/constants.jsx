@@ -14,7 +14,7 @@ export const NAV_LINKS = [
 
 export const SCROLL_OPTION = {
   offset: -72,
-  duration: 400,
+  duration: 500,
 };
 
-export const SECTION_SCROLL_DURATION = 700;
+export const SECTION_ANIMATION_DURATION = 700;

@@ -3,13 +3,30 @@
 }
 
 .section {
-  padding-block: 1.2rem;
-  height: 100vh;
+  background-color: var(--light-primary-color);
+  padding-block: 2rem;
+  height: calc(100vh - var(--navbar-height));
 }
 
 .section:nth-child(even) {
   color: var(--white-color);
   background-color: var(--dark-primary-color);
+}
+
+.section-heading {
+  position: relative;
+}
+
+.section-heading::after {
+  position: absolute;
+  content: "";
+  width: 4rem;
+  height: 0.125rem;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 2.5rem;
+  background-color: aqua;
 }
 
 button.primary {
