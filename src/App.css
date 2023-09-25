@@ -1,40 +1,17 @@
-.container {
-  padding-inline: 12rem;
-}
-
-.section {
-  background-color: var(--light-primary-color);
-  padding-block: 2rem;
-  height: calc(100vh - var(--navbar-height));
-}
-
-.section:nth-child(even) {
-  color: var(--white-color);
-  background-color: var(--dark-primary-color);
-}
-
-.section-heading {
-  position: relative;
-}
-
-.section-heading::after {
-  position: absolute;
-  content: "";
-  width: 4rem;
-  height: 0.125rem;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 2.5rem;
-  background-color: aqua;
-}
-
-button.primary {
-  padding: 0.7rem 1.5rem;
+.btn-primary {
+  background-color: var(--primary-btn-color);
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.875rem;
+  color: var(--white-color);
   font-size: 1rem;
   font-weight: 500;
-  color: var(--white-color);
-  background-color: var(--primary-button-color);
+  padding: 0.7rem 1.5rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-btn-hover-color);
+}
+
+.highlight-text {
+  color: var(--primary-color);
 }

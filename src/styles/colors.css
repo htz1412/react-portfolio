@@ -1,0 +1,13 @@
+:root {
+  /* Colors */
+  --primary-color: #412bc6;
+  --dark-primary-color: #170f43;
+  --white-color: #fff;
+  --navbar-bg-color: var(--white-color);
+  --primary-btn-color: var(--primary-color);
+  --primary-btn-hover-color: #452bd9;
+  --navbar-bg-color: var(--white-color);
+
+  /* Reset Bootstrap Colors */
+  --bs-primary: var(--primary-color) !important;
+}
